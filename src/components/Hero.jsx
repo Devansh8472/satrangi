@@ -5,15 +5,13 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className="hero-video-wrapper">
-        <video 
-          className="hero-video"
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-        >
-          <source src="/WhatsApp Video 2026-05-06 at 13.27.16.mp4" type="video/mp4" />
-        </video>
+        <div className="hero-image-container">
+          <img 
+            src="/premium_hero_bg.png" 
+            alt="Satrangi Elegance" 
+            className="hero-image-bg"
+          />
+        </div>
         <div className="hero-overlay"></div>
       </div>
       
