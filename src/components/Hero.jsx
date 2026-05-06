@@ -1,29 +1,35 @@
 import React from 'react';
+import HeroBackgroundVideo from './HeroBackgroundVideo';
 import './Hero.css';
 
 const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className="hero-video-wrapper">
-        <div className="hero-image-container">
-          <img 
-            src="/premium_hero_bg.png" 
-            alt="Satrangi Elegance" 
-            className="hero-image-bg"
-          />
-        </div>
+        <HeroBackgroundVideo />
         <div className="hero-overlay"></div>
       </div>
       
       <div className="hero-content">
-        <h1 className="hero-title fade-in">
-          Elegance Redefined
-        </h1>
-        <p className="hero-subtitle fade-in" style={{ animationDelay: '0.3s' }}>
-          By Rangmohini
-        </p>
-        <div className="hero-cta fade-in" style={{ animationDelay: '0.6s' }}>
-          <a href="#collections" className="btn-primary">Explore Collection</a>
+        <div className="hero-text-container">
+          <p className="hero-kicker fade-in">Presenting the Collection</p>
+          <h1 className="hero-title fade-in">
+            Elegance <br />
+            <span className="hero-title-accent">Redefined</span>
+          </h1>
+          <p className="hero-subtitle fade-in" style={{ animationDelay: '0.3s' }}>
+            A symphony of tradition and modern luxury. Curated exclusively by Rangmohini.
+          </p>
+          
+          <div className="hero-actions fade-in" style={{ animationDelay: '0.5s' }}>
+            <a href="#collections" className="btn-solid">Discover the Art</a>
+            <a href="#about" className="btn-outline">Watch Film</a>
+          </div>
+        </div>
+
+        <div className="hero-scroll-indicator">
+          <span>Scroll down</span>
+          <div className="scroll-line"></div>
         </div>
       </div>
     </section>

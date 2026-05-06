@@ -40,8 +40,8 @@ const VideoHighlights = () => {
               muted 
               loop 
               playsInline
+              src="/craftsmanship.mp4"
             >
-              <source src="/WhatsApp Video 2026-05-06 at 13.27.18.mp4" type="video/mp4" />
             </video>
             <div className="video-overlay">
               <span className="video-label">The Studio</span>
@@ -55,8 +55,8 @@ const VideoHighlights = () => {
               muted 
               loop 
               playsInline
+              src="/collection.mp4"
             >
-              <source src="/WhatsApp Video 2026-05-06 at 13.27.21.mp4" type="video/mp4" />
             </video>
             <div className="video-overlay">
               <span className="video-label">Craftsmanship</span>

@@ -2,13 +2,22 @@
 
 :root {
   /* Colors */
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #141414;
-  --text-primary: #f5f5f0;
-  --text-secondary: #a0a095;
-  --accent-gold: #d4af37;
-  --accent-gold-dark: #aa8c2c;
-  --accent-maroon: #4a0404;
+  --bg-primary: #fffdf8;
+  --bg-secondary: #f3eddf;
+  --bg-olive: #eaf0dc;
+  --bg-olive-soft: #f6f8ef;
+  --surface-white: #ffffff;
+  --surface-beige: #fbf6eb;
+  --text-primary: #16362b;
+  --text-secondary: #4f695e;
+  --text-muted: #7a8d83;
+  --accent-gold: #0f8f64;
+  --accent-gold-dark: #096c4b;
+  --accent-maroon: #b8cf9f;
+  --accent-mint: #d9f4e6;
+  --border-soft: rgba(15, 143, 100, 0.16);
+  --shadow-soft: 0 24px 70px rgba(22, 54, 43, 0.11);
+  --shadow-lift: 0 18px 45px rgba(15, 143, 100, 0.14);
 
   /* Typography */
   --font-heading: 'Cinzel', serif;
@@ -33,7 +42,9 @@
 
 body {
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
+  background:
+    radial-gradient(circle at top left, rgba(217, 244, 230, 0.48), transparent 34rem),
+    linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-olive-soft) 52%, var(--bg-primary) 100%);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -69,7 +80,7 @@ button {
 }
 
 .section-padding {
-  padding: var(--spacing-2xl) 0;
+  padding: clamp(5rem, 9vw, var(--spacing-2xl)) 0;
 }
 
 .heading-xl {
@@ -86,6 +97,11 @@ button {
 
 .text-gold {
   color: var(--accent-gold);
+}
+
+::selection {
+  background: var(--accent-mint);
+  color: var(--text-primary);
 }
 
 /* Animations */
@@ -108,7 +124,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--bg-secondary);
+  background: var(--accent-maroon);
   border-radius: 4px;
 }
 

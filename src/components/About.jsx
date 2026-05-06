@@ -29,7 +29,7 @@ const About = () => {
       <div className="container about-container">
         <div className="about-image-wrapper animate-on-scroll slide-up">
           <img 
-            src="/WhatsApp Image 2026-05-06 at 13.27.13.jpeg" 
+            src="/gallery-1.jpeg" 
             alt="Rangmohini Studio" 
             className="about-image"
           />

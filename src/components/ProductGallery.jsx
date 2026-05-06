@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from 'react';
 import './ProductGallery.css';
 
 const images = [
-  '/WhatsApp Image 2026-05-06 at 13.27.14.jpeg',
-  '/WhatsApp Image 2026-05-06 at 13.27.17 (1).jpeg',
-  '/WhatsApp Image 2026-05-06 at 13.27.17.jpeg',
-  '/WhatsApp Image 2026-05-06 at 13.27.19.jpeg',
-  '/WhatsApp Image 2026-05-06 at 13.27.22 (1).jpeg',
-  '/WhatsApp Image 2026-05-06 at 13.27.22.jpeg',
-  '/WhatsApp Image 2026-05-06 at 13.27.13.jpeg'
+  '/gallery-2.jpeg',
+  '/gallery-3.jpeg',
+  '/gallery-4.jpeg',
+  '/gallery-5.jpeg',
+  '/gallery-6.jpeg',
+  '/gallery-7.jpeg',
+  '/gallery-1.jpeg'
 ];
 
 const generateProducts = () => {
